@@ -36,7 +36,7 @@ const Home = () => {
             <h3 className="name">
               Hi, I'm <span>Ismail Safha</span>{" "}
             </h3>
-            <span className="job">Web Developer </span>
+            <span className="job">Front End Web Developer</span>
             <span className="text">
               Passionate
               <br /> to craft innovative <br /> web products.
