@@ -2,6 +2,7 @@ import React from "react";
 import portfolio from "../../../assets/portfolio.png";
 import "./Home.scss";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const moveVariants = {
@@ -40,14 +41,14 @@ const Home = () => {
               Passionate
               <br /> to craft innovative <br /> web products.
             </span>
-            <motion.a
-              href="#contact"
+            <motion.Link
+              to="#contact"
               whileHover={{ scale: 1.1 }}
               variants={moveVariants}
               animate="animation"
             >
               connect with me
-            </motion.a>
+            </motion.Link>
             <div className="web">Web Developer</div>
             <div className="ui">UI/UX Designer</div>
             <div className="freelance">Freelancer</div>

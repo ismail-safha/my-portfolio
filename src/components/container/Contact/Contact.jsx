@@ -4,6 +4,7 @@ import { contacts } from "../../../Data";
 
 import { motion } from "framer-motion";
 import { BsGithub } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 import { FaLinkedin } from "react-icons/fa";
 
@@ -53,9 +54,9 @@ const Contact = () => {
           <div className="social_icons">
             {icons.linksIcons.map((icon, i) => {
               return (
-                <a key={i} href={icon.iconLink}>
+                <Link key={i} to={icon.iconLink}>
                   {icon.iconName}
-                </a>
+                </Link>
               );
             })}
           </div>
@@ -83,7 +84,7 @@ const Contact = () => {
             transition={{ duration: 0.3 }}
             className="btn"
           >
-            <a href="#">Send</a>
+            <Link to="#">Send</Link>
           </motion.div>
         </motion.div>
       </div>

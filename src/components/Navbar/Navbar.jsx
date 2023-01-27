@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Navbar.scss";
 import { navLinks } from "../../Data";
-// import { socialIcons } from "../../Data";
+import { Link } from "react-router-dom";
 import { HiMenuAlt4, HiX } from "react-icons/hi";
 import { motion } from "framer-motion";
 // ===
@@ -60,7 +60,7 @@ const Navbar = () => {
           {navLinks.map((navlink, index) => {
             return (
               <li key={index}>
-                <a href={`#${navlink}`}>{navlink}</a>
+                <Link to={`#${navlink}`}>{navlink}</Link>
               </li>
             );
           })}
@@ -69,9 +69,9 @@ const Navbar = () => {
         <div className="social_icons">
           {icons.linksIcons.map((icon, i) => {
             return (
-              <a key={i} href={icon.iconLink}>
+              <Link key={i} to={icon.iconLink}>
                 {icon.iconName}
-              </a>
+              </Link>
             );
           })}
         </div>
@@ -101,9 +101,9 @@ const Navbar = () => {
           {navLinks.map((navlink, index) => {
             return (
               <li key={index}>
-                <a href={`#${navlink}`} onClick={() => setToggle(false)}>
+                <Link to={`#${navlink}`} onClick={() => setToggle(false)}>
                   {navlink}
-                </a>
+                </Link>
               </li>
             );
           })}

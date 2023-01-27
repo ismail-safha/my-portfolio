@@ -6,8 +6,10 @@ import Footer from "./components/container/Footer/Footer";
 import Home from "./components/container/Home/Home";
 
 import Navbar from "./components/Navbar/Navbar";
-import Project from "./components/Project";
-import SkiilsPrtfolio from "./components/SkiilsPrtfolio";
+
+import Project from "./components/container/Project/Project";
+
+import SkiilsPrtfolio from "./components/container/Skills/SkiilsPrtfolio";
 
 const App = () => {
   return (

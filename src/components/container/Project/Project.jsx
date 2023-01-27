@@ -1,10 +1,11 @@
 import React from "react";
-// import { Link } from 'react-router-dom'
-import image1 from "../assets/project-1.png";
-import image2 from "../assets/project-2.png";
-import image3 from "../assets/project-3.png";
-import image4 from "../assets/project-4.png";
-import image5 from "../assets/project-5.png";
+import { Link } from "react-router-dom";
+
+import image1 from "../../../assets/project-1.png";
+import image2 from "../../../assets/project-2.png";
+import image3 from "../../../assets/project-3.png";
+import image4 from "../../../assets/project-4.png";
+import image5 from "../../../assets/project-5.png";
 import { BsGithub } from "react-icons/bs";
 
 import "./project.css";
@@ -34,14 +35,14 @@ const Project = () => {
                   Css, Redux Toolkit, React Redux
                 </p>
                 <div className="buttons">
-                  <a
-                    href="https://github.com/ismail-safha/nika_store_reactjs"
+                  <Link
+                    to="https://github.com/ismail-safha/nika_store_reactjs"
                     className="primary-btn"
                   >
                     <BsGithub />
-                  </a>
-                  <a
-                    href="https://nika-store-ismail-safha.netlify.app/"
+                  </Link>
+                  <Link
+                    to="https://nika-store-ismail-safha.netlify.app/"
                     className="primary-btn outline external-link"
                   >
                     <span>demo</span>
@@ -58,7 +59,7 @@ const Project = () => {
                         d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
                       />
                     </svg>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -76,14 +77,14 @@ const Project = () => {
                   ReactJS, TypeScript, TailwindCSS, Fetch API
                 </p>
                 <div className="buttons">
-                  <a
-                    href="https://github.com/ismail-safha/Weather-Forecast-App-"
+                  <Link
+                    to="https://github.com/ismail-safha/Weather-Forecast-App-"
                     className="primary-btn"
                   >
                     <BsGithub />
-                  </a>
-                  <a
-                    href="https://weather-forecast-app-tau.vercel.app/"
+                  </Link>
+                  <Link
+                    to="https://weather-forecast-app-tau.vercel.app/"
                     className="primary-btn outline external-link"
                   >
                     <span>Demo</span>
@@ -100,7 +101,7 @@ const Project = () => {
                         d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
                       />
                     </svg>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -119,14 +120,14 @@ const Project = () => {
                   React Furniture Ecommerce Website using ReactJs, Redux Toolkit
                 </p>
                 <div className="buttons">
-                  <a
-                    href="https://github.com/ismail-safha/Furniture-Ecommerce-Website"
+                  <Link
+                    to="https://github.com/ismail-safha/Furniture-Ecommerce-Website"
                     className="primary-btn"
                   >
                     <BsGithub />
-                  </a>
-                  <a
-                    href="https://ismail-safha-multishop.netlify.app/home"
+                  </Link>
+                  <Link
+                    to="https://ismail-safha-multishop.netlify.app/home"
                     className="primary-btn outline external-link"
                   >
                     <span>Demo</span>
@@ -143,7 +144,7 @@ const Project = () => {
                         d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
                       />
                     </svg>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -163,14 +164,14 @@ const Project = () => {
                   JavaScript
                 </p>
                 <div className="buttons">
-                  <a
-                    href="https://github.com/ismail-safha/sushi-shop"
+                  <Link
+                    to="https://github.com/ismail-safha/sushi-shop"
                     className="primary-btn"
                   >
                     <BsGithub />
-                  </a>
-                  <a
-                    href="https://sushi-shop-ismail-safha.netlify.app/"
+                  </Link>
+                  <Link
+                    to="https://sushi-shop-ismail-safha.netlify.app/"
                     className="primary-btn outline external-link"
                   >
                     <span>Demo</span>
@@ -187,7 +188,7 @@ const Project = () => {
                         d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
                       />
                     </svg>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -204,14 +205,14 @@ const Project = () => {
                   Responsive-real-estate-website using html and css JavaScript
                 </p>
                 <div className="buttons">
-                  <a
-                    href="https://github.com/ismail-safha/Responsive-real-estate-website"
+                  <Link
+                    to="https://github.com/ismail-safha/Responsive-real-estate-website"
                     className="primary-btn"
                   >
                     <BsGithub />
-                  </a>
-                  <a
-                    href="https://ismail-safha.github.io/Responsive-real-estate-website/"
+                  </Link>
+                  <Link
+                    to="https://ismail-safha.github.io/Responsive-real-estate-website/"
                     className="primary-btn outline external-link"
                   >
                     <span>Demo</span>
@@ -228,7 +229,7 @@ const Project = () => {
                         d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
                       />
                     </svg>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -243,7 +244,7 @@ const Project = () => {
           </h3>
         </div>
         <div className="talk_right">
-          <a href="#contact">Contact Me</a>
+          <Link to="#contact">Contact Me</Link>
         </div>
       </div>
       {/* ==== */}

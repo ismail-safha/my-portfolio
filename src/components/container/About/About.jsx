@@ -1,6 +1,7 @@
 import React from "react";
 import "./About.scss";
 import CV from "../../../cv/ismail_safha.pdf";
+import { Link } from "react-router-dom";
 
 import { motion } from "framer-motion";
 import { bios } from "../../../Data";
@@ -52,14 +53,14 @@ const About = () => {
                 </div>
               );
             })}
-            <motion.a
-              href={CV}
+            <motion.Link
+              to={CV}
               download
               whileHover={{ scale: 1.1 }}
               transition={{ duration: 0.3 }}
             >
               Download Resume
-            </motion.a>
+            </motion.Link>
           </motion.div>
         </div>
       </div>

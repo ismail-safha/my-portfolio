@@ -1,5 +1,6 @@
 import React from "react";
 import "./Footer.scss";
+import { Link } from "react-router-dom";
 
 import { motion } from "framer-motion";
 import { BsGithub } from "react-icons/bs";
@@ -41,9 +42,9 @@ const Footer = () => {
         <div className="social_icons">
           {icons.linksIcons.map((icon, i) => {
             return (
-              <a key={i} href={icon.iconLink}>
+              <Link key={i} to={icon.iconLink}>
                 {icon.iconName}
-              </a>
+              </Link>
             );
           })}
         </div>

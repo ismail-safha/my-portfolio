@@ -1,6 +1,7 @@
 import React, { Fragment } from "react";
 import emoji from "react-easy-emoji";
-import DisplayLottie from "./DisplayLottie";
+
+import DisplayLottie from "../../DisplayLottie";
 import { Col, Container, Row, UncontrolledTooltip } from "reactstrap";
 import { Icon } from "@iconify/react";
 import "./skills.css";
