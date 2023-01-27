@@ -121,7 +121,9 @@ const SkiilsPrtfolio = () => {
         <Row className="my-5">
           {/* left */}
           <Col lg="6" className="order-2 order-lg-1 Lottie">
-            <DisplayLottie animationPath="/lottie/skills/fullstack.json" />
+            <DisplayLottie
+            //  animationPath="/lottie/skills/fullstack.json"
+            />
           </Col>
           {/* right  */}
           <Col lg="6" className="order-1 order-lg-2">

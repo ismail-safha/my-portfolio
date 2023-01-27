@@ -1,16 +1,12 @@
+// =========
 import React from "react";
-import Lottie from "react-lottie";
+import Lottie from "lottie-react";
+import skills_code from "./Comp 1.json";
 
-const DisplayLottie = ({ animationPath }) => {
-  const defaultOptions = {
-    loop: true,
-    autoplay: true,
-    path: animationPath,
-  };
-
+const DisplayLottie = () => {
   return (
-    <div onClick={() => null}>
-      <Lottie options={defaultOptions} />
+    <div>
+      <Lottie animationData={skills_code} loop={true} />
     </div>
   );
 };
