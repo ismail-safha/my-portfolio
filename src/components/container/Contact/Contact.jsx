@@ -1,20 +1,31 @@
 import React from "react";
 import "./Contact.scss";
 import { contacts } from "../../../Data";
-import { socialIcons } from "../../../Data";
+
 import { motion } from "framer-motion";
+import { BsGithub } from "react-icons/bs";
+
+import { FaLinkedin } from "react-icons/fa";
+
+const icons = {
+  linksIcons: [
+    {
+      iconName: <BsGithub />,
+      iconLink: "https://github.com/ismail-safha",
+    },
+    {
+      iconName: <FaLinkedin />,
+      iconLink: "https//linkmen.com",
+    },
+  ],
+};
 
 const Contact = () => {
   return (
     <div className="container" id="contact">
-      <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ y: [-50, 0], opacity: 1 }}
-        className="title"
-      >
-        <span>get in touch</span>
-        <h1>Contact Me</h1>
-      </motion.div>
+      <h2 className="section-heading" data-outline="Contact Me">
+        Contact Me
+      </h2>
       <div className="contact_form">
         <motion.div
           initial={{ x: 0, opacity: 0 }}
@@ -32,13 +43,20 @@ const Contact = () => {
             return (
               <div className="contact_left" key={contact.id}>
                 <div className="icon">{contact.icon}</div>
-                <p>{contact.infoText}</p>
+                <p className="info_text">{contact.infoText}</p>
               </div>
             );
           })}
+          {/* === */}
+
+          {/* ==== */}
           <div className="social_icons">
-            {socialIcons.map((socialIcon, index) => {
-              return <div key={index}>{socialIcon}</div>;
+            {icons.linksIcons.map((icon, i) => {
+              return (
+                <a key={i} href={icon.iconLink}>
+                  {icon.iconName}
+                </a>
+              );
             })}
           </div>
         </motion.div>

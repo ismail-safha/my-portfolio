@@ -1,9 +1,26 @@
 import React, { useState } from "react";
 import "./Navbar.scss";
 import { navLinks } from "../../Data";
-import { socialIcons } from "../../Data";
+// import { socialIcons } from "../../Data";
 import { HiMenuAlt4, HiX } from "react-icons/hi";
-import { Variant, motion } from "framer-motion";
+import { motion } from "framer-motion";
+// ===
+import { BsGithub } from "react-icons/bs";
+
+import { FaLinkedin } from "react-icons/fa";
+const icons = {
+  linksIcons: [
+    {
+      iconName: <BsGithub />,
+      iconLink: "https://github.com/ismail-safha",
+    },
+    {
+      iconName: <FaLinkedin />,
+      iconLink: "https//linkmen.com",
+    },
+  ],
+};
+// ====
 
 const Navbar = () => {
   // const [scroll, setScroll] = useState(false);
@@ -34,7 +51,7 @@ const Navbar = () => {
     },
   };
   return (
-    <div>
+    <div className="header">
       <div className="Nav_container">
         <div className="logo">
           <h3>IS</h3>
@@ -48,11 +65,19 @@ const Navbar = () => {
             );
           })}
         </ul>
+        {/* ======== */}
         <div className="social_icons">
-          {socialIcons.map((socialIcon, index) => {
-            return <div key={index}>{socialIcon}</div>;
+          {icons.linksIcons.map((icon, i) => {
+            return (
+              <a key={i} href={icon.iconLink}>
+                {icon.iconName}
+              </a>
+            );
           })}
         </div>
+        {/* ======== */}
+
+        {/* ==== */}
         {/* menu */}
         <div className="menu">
           <HiMenuAlt4
